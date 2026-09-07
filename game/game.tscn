@@ -21,7 +21,7 @@ texture = ExtResource("1_vasa2")
 [node name="Timer" type="Node" parent="." unique_id=655834055]
 
 [node name="CarTimer" type="Timer" parent="Timer" unique_id=636586925]
-wait_time = 0.15
+wait_time = 0.5
 autostart = true
 
 [node name="Objects" type="Node2D" parent="." unique_id=697677012]

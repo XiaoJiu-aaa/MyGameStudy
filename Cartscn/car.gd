@@ -16,7 +16,8 @@ func _ready() -> void:
 	var car_texture = colors.pick_random() as Texture
 	if car_texture == colors[1] and direction==Vector2.RIGHT:
 		$Sprite2D.flip_h = true
-	else if car_texture==colors[2] and direction==LEFT:
+	elif car_texture == colors[2] and direction==Vector2.LEFT:
+		$Sprite2D.flip_h = true
 		
 	
 	var texture_size = car_texture.get_size()
