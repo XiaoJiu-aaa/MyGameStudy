@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dlk2c7slqwsbv"]
+
+[ext_resource type="Texture2D" uid="uid://bf8x7bl5l1thu" path="res://asserts/block-removebg-preview.png" id="1_b10f5"]
+
+[node name="BlockItems" type="StaticBody2D" unique_id=1011519247]
+scale = Vector2(0.405, 0.405)
+collision_mask = 2
+
+[node name="BlockRemovebgPreview" type="Sprite2D" parent="." unique_id=174374448]
+position = Vector2(30.243805, 9.876526)
+scale = Vector2(0.9928795, 1)
+texture = ExtResource("1_b10f5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=796167202]
+polygon = PackedVector2Array(-74.07409, -123.4568, 64.19752, -133.33336, 202.46916, 4.938283, 96.29634, 116.049385, -88.88891, 125.92597, -207.40736, 9.876546)

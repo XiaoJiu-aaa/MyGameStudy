@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://t2m46se4y0bi"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_m67a6"]
+a = Vector2(14.7735195, 2005)
+b = Vector2(15.330994, -1688)
+
+[node name="Bloder_4" type="StaticBody2D" unique_id=1536801410]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=169914662]
+position = Vector2(-115, 10)
+scale = Vector2(7.175, 1)
+shape = SubResource("SegmentShape2D_m67a6")
+debug_color = Color(0.9549276, 0.2047933, 0.16627008, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=793863494]
+position = Vector2(1774, 889.0001)
+rotation = 1.5707964
+scale = Vector2(7.175, 1)
+shape = SubResource("SegmentShape2D_m67a6")
+debug_color = Color(0.9549276, 0.2047933, 0.16627008, 0.41960785)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1805666948]
+position = Vector2(1752, -116)
+rotation = 1.5707964
+scale = Vector2(7.175, 1)
+shape = SubResource("SegmentShape2D_m67a6")
+debug_color = Color(0.9549276, 0.2047933, 0.16627008, 0.41960785)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=1413056489]
+position = Vector2(2471.0002, 592)
+scale = Vector2(7.175, 1)
+shape = SubResource("SegmentShape2D_m67a6")
+debug_color = Color(0.9549276, 0.2047933, 0.16627008, 0.41960785)

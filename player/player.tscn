@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://47moa6oycgum"]
+
+[ext_resource type="Texture2D" uid="uid://cw1tadon2uvqi" path="res://asserts/player.png" id="1_oul6g"]
+[ext_resource type="Script" uid="uid://cmpa22pvta7be" path="res://player/player.gd" id="1_rkbax"]
+[ext_resource type="Script" uid="uid://dyyxdmhlgla26" path="res://player/camera_2d.gd" id="3_g1dw6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ior1o"]
+size = Vector2(54, 34)
+
+[node name="Player" type="CharacterBody2D" unique_id=491690232]
+collision_layer = 2
+collision_mask = 13
+script = ExtResource("1_rkbax")
+
+[node name="Player" type="Sprite2D" parent="." unique_id=1939403726]
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("1_oul6g")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1333289885]
+position = Vector2(0, 8)
+scale = Vector2(8, 8)
+zoom = Vector2(4.605, 4.605)
+limit_left = 0
+limit_top = 0
+limit_right = 2600
+limit_bottom = 1148
+position_smoothing_enabled = true
+script = ExtResource("3_g1dw6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1125983361]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_ior1o")

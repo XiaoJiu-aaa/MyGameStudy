@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://b5w52fnl002a2"]
+
+[ext_resource type="Script" uid="uid://bqa3hkoh65jdr" path="res://game/game.gd" id="1_dxrkv"]
+[ext_resource type="Texture2D" uid="uid://dgcjii0y3hrth" path="res://asserts/map.jpeg" id="1_vasa2"]
+[ext_resource type="PackedScene" uid="uid://47moa6oycgum" path="res://player/player.tscn" id="2_h7iqs"]
+[ext_resource type="PackedScene" uid="uid://dlk2c7slqwsbv" path="res://game/block_items.tscn" id="3_h7iqs"]
+[ext_resource type="PackedScene" uid="uid://t2m46se4y0bi" path="res://bloder/bloder_4.tscn" id="4_4fuuu"]
+[ext_resource type="PackedScene" uid="uid://dy6q0s2r6jcrk" path="res://final.tscn" id="6_dakft"]
+
+[node name="Game" type="Node2D" unique_id=820472218]
+script = ExtResource("1_dxrkv")
+metadata/_edit_vertical_guides_ = [0.0, 2608.0, 2600.0]
+metadata/_edit_horizontal_guides_ = [-1.0, 1142.0, -517.0, -649.0, 1148.0]
+
+[node name="Map" type="Sprite2D" parent="." unique_id=1801204405]
+position = Vector2(1301.7068, 571.36224)
+rotation = 1.5707964
+scale = Vector2(1.0528533, 2.28236)
+texture = ExtResource("1_vasa2")
+
+[node name="Timer" type="Node" parent="." unique_id=655834055]
+
+[node name="CarTimer" type="Timer" parent="Timer" unique_id=636586925]
+wait_time = 0.15
+autostart = true
+
+[node name="Objects" type="Node2D" parent="." unique_id=697677012]
+y_sort_enabled = true
+
+[node name="Player" parent="Objects" unique_id=434517986 instance=ExtResource("2_h7iqs")]
+
+[node name="BlockItems" parent="Objects" unique_id=1011519247 instance=ExtResource("3_h7iqs")]
+position = Vector2(687, 447.99997)
+
+[node name="CarStartPosition" type="Node2D" parent="." unique_id=1689078080]
+
+[node name="Marker2D" type="Marker2D" parent="CarStartPosition" unique_id=1032070162]
+position = Vector2(2547, 268)
+
+[node name="Marker2D2" type="Marker2D" parent="CarStartPosition" unique_id=1660473229]
+position = Vector2(2546, 468)
+
+[node name="Marker2D3" type="Marker2D" parent="CarStartPosition" unique_id=1661527065]
+position = Vector2(38, 673)
+
+[node name="Marker2D4" type="Marker2D" parent="CarStartPosition" unique_id=1489681040]
+position = Vector2(33, 864)
+
+[node name="Borders" type="Node2D" parent="." unique_id=226074011]
+position = Vector2(0, -5)
+
+[node name="Bloder_4" parent="Borders" unique_id=1536801410 instance=ExtResource("4_4fuuu")]
+
+[node name="Final" parent="Borders" unique_id=11880150 instance=ExtResource("6_dakft")]
+collision_layer = 9
+collision_mask = 2
+
+[connection signal="timeout" from="Timer/CarTimer" to="." method="_on_car_timer_timeout"]
+[connection signal="body_entered" from="Borders/Final" to="." method="_on_final_body_entered"]
