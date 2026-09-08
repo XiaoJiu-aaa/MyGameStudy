@@ -2,7 +2,7 @@ extends Area2D
 
 var direction :Vector2 = Vector2.LEFT
 
-var speed :int =200
+var speed :int =400
 var colors = [
 	preload("res://asserts/icon.svg"),
 	preload("res://asserts/car1.png"),
