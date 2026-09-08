@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bushtc503f8li"]
 
-[ext_resource type="Texture2D" uid="uid://bhx8aw3c6dv3t" path="res://asserts/icon.svg" id="1_7822p"]
+[ext_resource type="Texture2D" uid="uid://bhx8aw3c6dv3t" path="res://asserts/picture/icon.svg" id="1_7822p"]
 [ext_resource type="Script" uid="uid://5a4hbviq7e26" path="res://Cartscn/car.gd" id="1_xnfe6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ior1o"]

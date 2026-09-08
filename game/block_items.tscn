@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dlk2c7slqwsbv"]
 
-[ext_resource type="Texture2D" uid="uid://bf8x7bl5l1thu" path="res://asserts/block-removebg-preview.png" id="1_b10f5"]
+[ext_resource type="Texture2D" uid="uid://bf8x7bl5l1thu" path="res://asserts/picture/block-removebg-preview.png" id="1_b10f5"]
 
 [node name="BlockItems" type="StaticBody2D" unique_id=1011519247]
 scale = Vector2(0.405, 0.405)

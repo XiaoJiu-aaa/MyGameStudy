@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://cue0qihlmoihm"]
 
+[ext_resource type="Script" uid="uid://du3wnod0gyow4" path="res://title/title.gd" id="1_nx56k"]
+[ext_resource type="FontFile" uid="uid://b21sfmh54a6fu" path="res://asserts/Fonts/impact.ttf" id="1_yx5l7"]
+[ext_resource type="Texture2D" uid="uid://cw1tadon2uvqi" path="res://asserts/picture/player.png" id="2_crako"]
+
 [node name="Title" type="Control" unique_id=412668431]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_nx56k")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1900098864]
 layout_mode = 1
@@ -17,9 +22,67 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.9764706, 0.4745098, 0.6666667, 1)
 
-[node name="Label" type="Label" parent="." unique_id=2076115736]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="title_main" type="Label" parent="." unique_id=2076115736]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -275.0
+offset_top = -86.0
+offset_right = 275.0
+offset_bottom = -300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_yx5l7")
 theme_override_font_sizes/font_size = 140
 text = "Car Game"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=892983063]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_crako")
+expand_mode = 1
+
+[node name="core" type="Label" parent="." unique_id=1841678356]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = 144.0
+offset_right = 54.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_yx5l7")
+text = "High Core:123"
+horizontal_alignment = 1
+
+[node name="tips" type="Label" parent="." unique_id=1798555163]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -0.5
+offset_top = -23.0
+offset_right = 0.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 40
+text = "空格重新开始"

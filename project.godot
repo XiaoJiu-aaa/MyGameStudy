@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="mygame"
-run/main_scene="res://game/game.tscn"
+run/main_scene="uid://c0d0o3cqswjo1"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://asserts/icon.svg"
+config/icon="res://asserts/picture/icon.svg"
+
+[autoload]
+
+GlobleVar="*uid://djs2em0xaf6co"
 
 [display]
 

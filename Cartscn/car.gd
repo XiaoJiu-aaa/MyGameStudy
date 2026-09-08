@@ -4,9 +4,9 @@ var direction :Vector2 = Vector2.LEFT
 
 var speed :int =400
 var colors = [
-	preload("res://asserts/icon.svg"),
-	preload("res://asserts/car1.png"),
-	preload("res://asserts/OIP-C.webp")]
+	preload("res://asserts/picture/icon.svg"),
+	preload("res://asserts/picture/car1.png"),
+	preload("res://asserts/picture/OIP-C.webp")]
 
 
 func _ready() -> void:

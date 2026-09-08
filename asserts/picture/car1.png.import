@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://veellpqio1tu"
-path="res://.godot/imported/OIP-C.webp-62cc958f5c382da2878568125cc3ae23.ctex"
+uid="uid://dvng13ebwpysg"
+path="res://.godot/imported/car1.png-e89c3365d82e9a9c52ddc07702087a11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asserts/OIP-C.webp"
-dest_files=["res://.godot/imported/OIP-C.webp-62cc958f5c382da2878568125cc3ae23.ctex"]
+source_file="res://asserts/picture/car1.png"
+dest_files=["res://.godot/imported/car1.png-e89c3365d82e9a9c52ddc07702087a11.ctex"]
 
 [params]
 

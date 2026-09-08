@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvng13ebwpysg"
-path="res://.godot/imported/car1.png-02230995ce171950182274cb5eff88c1.ctex"
+uid="uid://bhx8aw3c6dv3t"
+path="res://.godot/imported/icon.svg-151a2e5a05ea1da01ee229e930ef4f5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asserts/car1.png"
-dest_files=["res://.godot/imported/car1.png-02230995ce171950182274cb5eff88c1.ctex"]
+source_file="res://asserts/picture/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-151a2e5a05ea1da01ee229e930ef4f5b.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
