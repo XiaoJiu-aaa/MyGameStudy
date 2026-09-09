@@ -20,6 +20,7 @@ texture = ExtResource("1_oul6g")
 position = Vector2(0, 8)
 scale = Vector2(8, 8)
 zoom = Vector2(4.605, 4.605)
+process_callback = 0
 limit_left = 0
 limit_top = 0
 limit_right = 2600

@@ -15,10 +15,10 @@ func _on_car_timer_timeout() -> void:
 	car.connect("body_entered",go_to_title)
 
 # 返回标题
-func go_to_title(body:Node2D) ->void:
+func go_to_title(_body:Node2D) ->void:
 	call_deferred("changetree")
 	
-func _on_finalgame_body_entered(body: Node2D) -> void:
+func _on_finalgame_body_entered(_body: Node2D) -> void:
 	# 正在处理物理实体时必须使用call_deferred来确保安全
 	call_deferred("changetree")
 	GlobleVar.score = finalcore
